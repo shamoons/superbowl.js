@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 9, ../sass/screen.scss */
 body {
-  width: 99%;
+  width: 100%;
   height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -100,10 +100,14 @@ a {
 
 /* line 36, ../sass/screen.scss */
 #bottomLinkWrapper {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 15px;
   right: 0px;
   position: fixed;
   bottom: 0px;
   background-color: silver;
+  z-index: 9999;
+  color: white;
+  text-align: center;
+  font-size: 8px;
 }
