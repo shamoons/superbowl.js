@@ -28,3 +28,5 @@ npm-debug.log
 .Trashes
 
 .sass-cache
+
+*.orig
