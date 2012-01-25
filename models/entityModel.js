@@ -1,17 +1,26 @@
 var mongoose = require('mongoose');
 
-var LocationSchema = require('./schemas/locationSchema');
-
 var EntitySchema = new mongoose.Schema({
 	addedOn     : Date
-  , data   	 	: Schema.Types.Mixed 
-  , location	: { LocationSchema, index: true }
-  , user_id   : String
+  , data   	 	: mongoose.Schema.Types.Mixed 
+  , location	: { 
+      x: Number
+    , y: Number
+   }
+  , username    : String
 });
 
-Entity.pre('save', function (next) {
+EntitySchema.pre('save', function (next) {
   this.markModified('data');
   next();
 });
 
-exports.Entity = mongoose.model 'Entity', EntitySchema
+EntitySchema.statics.findNear = function search (x, y, cb) {
+  return this.find({ location : { $near : [ y, x ], /* $maxDistance : 500/111.2 */ } }, cb)
+}
+
+EntitySchema.methods.findNeighbors = function findSimilarType (cb) {
+  return this.findNear(this.location.x, this.location.y, cb);
+};
+
+module.exports = mongoose.model('Entity', EntitySchema);
