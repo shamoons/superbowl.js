@@ -6,5 +6,9 @@
         $("body").append(data);
       });
     });
+
+    $('canvas').click(function(e){
+      window.socket.emit('click', { x: e.pageX, y: e.pageY });
+    });
   });
 })();
