@@ -40,7 +40,17 @@
 		
 		function canvasMoved(e) {
 			if (dragging && mode == 'dragging') {
+				console.log('dragging');
+				dx = origin.x - e.pageX
+				dy = origin.y - e.pageY
 				
+				nx = origPos.x - dx
+				ny = origPos.y - dy
+				
+				$('#canvas').offset({
+					'left'	: nx,
+					'top'	: ny
+				});
 			}
 		}
 		
