@@ -1,4 +1,4 @@
-# Infinidea.net*
+# Infinidea.net [I have registered this, also infinidea.org and infinitepasteboard.com]
 
 Infinidea is an online realtime collaborative pasteboard app. 
 
