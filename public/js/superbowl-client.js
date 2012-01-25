@@ -1,14 +1,7 @@
 (function() {
-    jQuery(function($) {
-		$(document).ready(function() {
-			console.log('loaded');
+	$(document).ready(function() {
+		console.log('loaded');
 
-      var socket = io.connect('http://localhost:3000');
-      socket.on('news', function (data) {
-        console.log(data);
-        socket.emit('my other event', { my: 'data' });
-      });
-			
 			$('#canvasWrapper')
 
       $('canvas').click(canvasClicked);
@@ -16,6 +9,12 @@
       function canvasClicked() {
         alert("clicked");
       }
-		});
+
+    var socket = io.connect('http://localhost:3000');
+    socket.on('news', function (data) {
+      console.log(data);
+      socket.emit('my other event', { my: 'data' });
     });
+  });
+		
 })();
