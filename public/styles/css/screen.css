@@ -67,19 +67,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body {
   width: 100%;
   height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 a {
   color: #00B7FF;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 #container {
   position: absolute;
   top: 0px;
@@ -88,7 +88,7 @@ a {
   bottom: 0px;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 #canvasWrapper {
   border: 1px solid #999;
   position: absolute;
@@ -99,7 +99,7 @@ a {
   overflow: hidden !important;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 #bottomLinkWrapper {
   width: 60px;
   height: 15px;
@@ -111,4 +111,165 @@ a {
   color: white;
   text-align: center;
   font-size: 8px;
+}
+
+/* line 57, ../sass/screen.scss */
+.escaper {
+  position: absolute;
+}
+
+/* line 61, ../sass/screen.scss */
+#email-input {
+  position: relative;
+  width: 600px;
+  float: left;
+  padding: 0 10px 15px 7px;
+  background-color: #333;
+  left: -400px;
+  top: 18px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #fff;
+}
+/* line 72, ../sass/screen.scss */
+#email-input form {
+  float: right;
+}
+/* line 75, ../sass/screen.scss */
+#email-input input.text {
+  width: 580px;
+  float: right;
+  font-size: 24px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 6px;
+  margin-bottom: 0.5em;
+  margin-right: 2px;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+}
+/* line 86, ../sass/screen.scss */
+#email-input.default input.text {
+  color: gray;
+}
+/* line 89, ../sass/screen.scss */
+#email-input .validator {
+  right: 0;
+  top: 25px;
+  padding-right: 18px;
+  position: absolute;
+  color: maroon;
+}
+/* line 95, ../sass/screen.scss */
+#email-input .validator.valid {
+  color: green;
+}
+/* line 99, ../sass/screen.scss */
+#email-input input.button {
+  cursor: pointer;
+  float: right;
+  clear: both;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #1175e5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.25)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  color: #fff;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #444;
+  font-size: 16px;
+  padding: 0.5em 4em;
+  text-shadow: 0 -1px 0 #444444;
+}
+/* line 114, ../sass/screen.scss */
+#email-input input.button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.3)), color-stop(80%, rgba(255, 255, 255, 0.1)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+}
+/* line 117, ../sass/screen.scss */
+#email-input input.button.cancel {
+  clear: none;
+  color: #000;
+  margin-right: 0.5em;
+  font-size: 16px;
+  padding: 0.5em 2em;
+  -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  background-color: #aaa;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.25)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  text-shadow: 0 1px 0 #dddddd;
+}
+/* line 128, ../sass/screen.scss */
+#email-input input.button.cancel:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0.05)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+}
+/* line 133, ../sass/screen.scss */
+#email-input .arrowtip {
+  float: left;
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/arrowtip.png);
+  position: relative;
+  left: 500px;
+  top: -16px;
+}
+/* line 142, ../sass/screen.scss */
+#email-input .cross {
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  width: 48px;
+  height: 47px;
+  background-image: url(../images/icon-x.png);
+  background-position: top left;
+}
+/* line 150, ../sass/screen.scss */
+#email-input .cross:hover {
+  background-position: bottom left;
+  cursor: pointer;
 }

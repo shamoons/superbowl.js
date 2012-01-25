@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
 
 body {
@@ -46,3 +47,121 @@ a {
   text-align: center;
   font-size: 8px;
 }
+
+
+
+//email overlay
+$hl1: #1175e5;
+$hl2: #e68210;
+
+.escaper {
+  position: absolute;
+}
+
+#email-input {
+  position: relative;
+  width: 600px;
+  float: left;
+  padding: 0 10px 15px 7px;
+  background-color: #333;
+  left: -400px;
+  top: 18px;
+  @include border-radius(10px);
+  @include box-shadow(0 3px 3px rgba(#000, 0.5));
+  border-top: 1px solid #fff;
+  form {
+    float:right;
+  }
+  input.text {
+    width: 580px;
+    float:right;
+    font-size: 24px;
+    @include border-radius(4px);
+    border:none;
+    padding: 4px 6px;
+    margin-bottom: 0.5em;
+    margin-right: 2px;
+    @include box-shadow(0 1px 2px rgba(#000, 0.9) inset);
+  }
+  &.default input.text {
+    color: gray;
+  }
+  .validator {
+    right: 0;
+    top: 25px;
+    padding-right: 18px;
+    position:absolute;
+    color:maroon;
+    &.valid {
+      color: green;
+    }
+  }
+  input.button {
+    cursor: pointer;
+    float:right;
+    clear:both;
+    @include border-radius(4px);
+    @include box-shadow(0 2px 2px rgba(#000, 0.5));
+    background-color: $hl1;
+    @include background-image(linear-gradient(top, rgba(#fff, 0.25) 20%, rgba(#fff, 0) 80%));
+    color: #fff;
+    border: none;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #444;
+    font-size: 16px;
+    padding: 0.5em 4em;
+    @include text-shadow(0 -1px 0 #444);
+    &:hover {
+      @include background-image(linear-gradient(top, rgba(white, 0.3) 20%, rgba(#fff, 0.10) 80%));    
+    }
+    &.cancel {
+      clear:none;
+      color:#000;
+      margin-right: 0.5em;
+      font-size: 16px;
+      padding: 0.5em 2em;
+      @include box-shadow(0 2px 1px rgba(#000, 0.5));
+      background: transparent;
+      background-color: #aaa;
+      @include background-image(linear-gradient(top, rgba(#fff, 0.25) 20%, rgba(#fff, 0) 80%));
+      @include text-shadow(0 1px 0 #ddd);
+      &:hover {
+        @include background-image(linear-gradient(top, rgba(white, 0.4) 20%, rgba(#fff, 0.05)));    
+      }      
+    }
+  }
+  .arrowtip {
+    float: left;
+    width: 32px;
+    height: 16px;
+    background-image:url(../images/arrowtip.png);
+    position: relative;
+    left:500px;
+    top:-16px;
+  }
+  .cross {
+    position: absolute;
+    right: -18px;
+    top:-18px;
+    width:48px;
+    height:47px;
+    background-image: url(../images/icon-x.png);
+    background-position: top left;
+    &:hover {
+      background-position: bottom left;      
+      cursor:pointer;
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
