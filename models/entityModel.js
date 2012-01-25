@@ -1,9 +1,5 @@
 var mongoose = require('mongoose');
-
-var LocationSchema = new Schema({
-	x: Number
-	, y: Number
-});
+var LocationSchema = require('./schemas/locationSchema');
 
 /*
 	Remember the Schema.Types.Mixed property definition requires that code similar 
@@ -14,9 +10,11 @@ var LocationSchema = new Schema({
 	entity.save(); // entity will now get saved
 */
 
-var Entity = new Schema({
+var EntitySchema = new Schema({
 	addedOn     : Date
   , data   	 	: Schema.Types.Mixed 
   , location	: { LocationSchema, index: true }
   , username    : String
 });
+
+exports.Entity = mongoose.model 'Entity', EntitySchema
