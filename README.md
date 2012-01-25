@@ -1,5 +1,6 @@
 # Infinidea.net [I have registered this, also infinidea.org and infinitepasteboard.com]
 
+
 Infinidea is an online realtime collaborative pasteboard app. 
 
 **What does that mean?**
@@ -27,6 +28,8 @@ To add stuff to the pasteboard, just drag and drop text, images, videos, whateve
 If you click on an item to select it, you get a little rectangle around it with a couple of controls at the bottom for resizing the item, deleting it, or opening up a popup window with an enlarged version of it.
 
 There are also other kinds of controls for specific kinds of items. For instance, text items on the pasteboard have a vertical scroll bar attached to them, and also a way to open up a rich text editor to adjust the font and all that good stuff.
+
+And of course, last but not least, you can change the background color of the pasteboard to whatever you want.
 
 
 ### Draw [once again, I know this might not be compatible with the rest of it]
