@@ -30,7 +30,7 @@ app.configure(function(){
 
 // Routes
 var routes = require('./routes')(app)
-var socketIO = require('/socket.io')(io);
+var socketIO = require('./socket.io')(io);
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
