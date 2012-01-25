@@ -1,6 +1,6 @@
 (function() {
 	$(document).ready(function() {
-    var socket = io.connect('http://localhost:3000');
+    window.socket = io.connect('http://localhost:3000');
 
 		drawInit();
     $('canvas').click(canvasClicked);
@@ -18,12 +18,12 @@
       ctx.closePath();
       ctx.fill();
 
-      socket.emit('click', { x: e.pageX, y: e.pageY });
+      window.socket.emit('click', { x: e.pageX, y: e.pageY });
     }
 
-    socket.on('news', function (data) {
+    window.socket.on('news', function (data) {
     	console.log(data);
-      socket.emit('my other event', { my: 'data' });
+      window.socket.emit('my other event', { my: 'data' });
     });
   });
 		
