@@ -1,8 +1,6 @@
 (function() {
 	$(document).ready(function() {
-		console.log('loaded');
-
-			$('#canvasWrapper')
+      // $('#canvasWrapper')
 
       $('canvas').click(canvasClicked);
 			

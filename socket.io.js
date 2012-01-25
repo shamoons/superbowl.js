@@ -5,4 +5,9 @@ module.exports = function(io) {
       console.log(data);
     });
   });
+  
+  io.sockets.on('click', function (socket) {
+    socket.emit('news', { hello: 'world' });
+  });
+
 }
