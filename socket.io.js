@@ -11,6 +11,10 @@ module.exports = function(io) {
       console.log(data);
     });
 
+    socket.on('click', function (data) {
+      console.log("Clicked at " + data.x + ", " + data.y);
+    });
+
     socket.on('shamoon', function (data) {
       fs.readFile('/views/authenticationWindow.jade', 'ascii');
       
