@@ -25,3 +25,12 @@ a {
 	right: 10px;
 	bottom: 10px;
 }
+
+canvas#canvas {
+	border: 1px solid #ddd;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
