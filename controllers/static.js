@@ -1,5 +1,5 @@
-exports.example = function(req, res, next) {
-  res.render('index.date', {
+exports.index = function(req, res, next) {
+  res.render('index.jade', {
     title: "Superbowl.js"
   });
 };
