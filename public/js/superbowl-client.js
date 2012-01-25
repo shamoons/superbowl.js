@@ -1,11 +1,14 @@
 (function() {
 	$(document).ready(function() {
-		var canvas	= document.getElementById('canvas');
-		var ctx		= canvas.getContext('2d');
+		var canvas	= document.getElementById('canvas')
+		var ctx		= canvas.getContext('2d')
 		var mouse	= {x:0,y:0} // mouse position
 		var origPos	= {x:0,y:0} // canvas position
 		var origin	= {x:0,y:0} // click position
-		var scale	= 1;
+		var scale	= 1
+		
+		var dragging	= 0
+		var circle		= 0
 
     	window.socket = io.connect('http://localhost:3000');
 
@@ -20,10 +23,12 @@
 
 			var ctx = this.getContext("2d");
 		     //draw a circle
-			ctx.beginPath();
-			ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
-			ctx.closePath();
-			ctx.fill();
+			if (circle) {
+				ctx.beginPath();
+				ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
+				ctx.closePath();
+				ctx.fill();
+			}
 		}
 		
     	window.socket.on('news', function (data) {
