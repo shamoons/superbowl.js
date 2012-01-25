@@ -47,3 +47,13 @@ a {
   text-align: center;
   font-size: 8px;
 }
+
+#authenticationWindow {
+  width: 100px;
+  right: 0;
+  position: fixed;
+  bottom: 10px;
+  z-index: 9998;
+  background-color: red;
+  height: 100px;
+}

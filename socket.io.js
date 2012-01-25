@@ -16,15 +16,11 @@ module.exports = function(io) {
     });
 
     socket.on('shamoon', function (data) {
-      fs.readFile('/views/authenticationWindow.jade', 'ascii');
-      
-      jc = jade.compile('div(id="authenticationWindow")', {self: true});
-      authenticationWindowHTML = jc();
-
-      console.log("HEREERERERERE");
-      console.log(data);
+      fs.readFile(__dirname + '/views/client/authenticationWindow.jade', 'ascii', function(err, data) {
+        html = jade.compile(data)();
+        socket.emit('loadAuthenticationWindow', { html: html });
+      })
     });
-
   });
 
 }
