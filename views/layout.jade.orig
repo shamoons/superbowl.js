@@ -1,0 +1,11 @@
+!!!
+html
+  head
+    title= title
+<<<<<<< HEAD
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/socket.io/socket.io.js")
+=======
+    link(rel='stylesheet', href='/styles/css/screen.css')
+>>>>>>> de94fd2444bf43220111ad7646680efe891eb4f9
+  body!= body
