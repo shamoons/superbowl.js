@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 config = require('./config/index.js');
 
 var app = module.exports = express.createServer();
+var io = require('socket.io').listen(app)
 
 dsn = "mongodb://";
 if(config.database.username !== "" && config.database.password !== "")
@@ -29,6 +30,7 @@ app.configure(function(){
 
 // Routes
 var routes = require('./routes')(app)
+var socketIO = require('/socket.io')(io);
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
