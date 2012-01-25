@@ -5,11 +5,6 @@
     -moz-border-radius: $radius;
     -webkit-border-radius: $radius;
 }
-@mixin roundedSide($side, $radius: 10px) {
-  border-#{$side}-radius: $radius;
-  -moz-border-radius-#{$side}: $radius;
-  -webkit-border-#{$side}-radius: $radius;
-}
 @mixin roundedTop($radius: 10px) {
 	-webkit-border-top-left-radius: $radius; 
 	-moz-border-radius-topleft: $radius;
@@ -25,6 +20,11 @@
 	-webkit-border-bottom-right-radius: $radius; 
 	-moz-border-radius-bottomright: $radius;
 	border-bottom-right-radius: $radius;
+}
+@mixin roundedSide($side, $radius: 10px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
 }
 @mixin roundedLeft($radius: 10px) {
 	-webkit-border-bottom-left-radius: $radius; 
@@ -43,34 +43,34 @@
 	border-bottom-right-radius: $radius;
 }
 /*	Drop Shadows  */
-@mixin shadowed($a,$b,$c,$d,$opacity) {
+@mixin shadow($a,$b,$c,$d,$opacity) {
 	-webkit-box-shadow: $a $b $c $d rgba(0,0,0,$opacity);
 	-moz-box-shadow: $a $b $c $d rgba(0,0,0,$opacity);
 	box-shadow: $a $b $c $d rgba(0,0,0,$opacity);
 }
-@mixin innerShadowed($a,$b,$c,$d,$opacity) {
+@mixin innerShadow($a,$b,$c,$d,$opacity) {
 	-webkit-box-shadow: inner $a $b $c $d rgba(0,0,0,$opacity);
 	-moz-box-shadow: inner $a $b $c $d rgba(0,0,0,$opacity);
 	box-shadow: inner $a $b $c $d rgba(0,0,0,$opacity);
 }
-@mixin glowedBlue($a,$b,$c,$d,$opacity) {
+@mixin blueGlow($a,$b,$c,$d,$opacity) {
 	-webkit-box-shadow: $a $b $c $d rgba(86,163,225,$opacity);
 	-moz-box-shadow: $a $b $c $d rgba(86,163,225,$opacity);
 	box-shadow: $a $b $c $d rgba(86,163,225,$opacity);
 }
-@mixin insetShadowed($a,$b,$c,$d,$color) {
+@mixin insetShadow($a,$b,$c,$d,$color) {
     -moz-box-shadow:inset $a $b $c $d $color;
     -webkit-box-shadow:inset $a $b $c $d $color;
     box-shadow:inset $a $b $c $d $color;	
 }
 /*  Gradients  */
-@mixin gradiented($first,$second) {
+@mixin gradient($first,$second) {
 	background: $second;
 	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first', endColorstr='$second');
 	background: -webkit-gradient(linear, left top, left bottom, from($first), to($second));
 	background: -moz-linear-gradient(top,  $first,  $second);
 }
-@mixin gradientedPlus($first,$second) {
+@mixin gradientFancy($first,$second) {
 	background-color: $first;
     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, $first), color-stop(1, $second) );
     background:-moz-linear-gradient( center top, $first 5%, $second 100% );

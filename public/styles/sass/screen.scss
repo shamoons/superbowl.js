@@ -84,12 +84,22 @@ a {
 	bottom: 10px;
 	overflow: hidden !important;
   
+  // TODO: css3 transitions
+  // for position changes
   #canvas {
     position: absolute;
     top: 0px;
     left: 0px;
-    right: 0px;
-    bottom: 0px;
+    height: 5000px;
+    width: 5000px;
+
+    div.item {
+      background: #f4f4f4;
+      padding: 5px 10px;
+      position: absolute;
+      left: 300px;
+      top: 300px;
+    }
   }	
 }
 
