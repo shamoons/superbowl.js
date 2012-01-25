@@ -4,7 +4,12 @@
 			console.log('loaded');
 			
 			$('#canvasWrapper')
+
+      $('canvas').click(canvasClicked);
 			
+      function canvasClicked() {
+        alert("clicked");
+      }
 		});
     });
 })();
