@@ -48,6 +48,7 @@ a {
         width: 100%;
         line-height: 25px; }
   #header div#login {
+    display: none;
     position: absolute;
     top: 25px;
     right: 20px; }

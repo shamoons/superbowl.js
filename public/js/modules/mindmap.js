@@ -15,7 +15,7 @@ modules['mindmap'] = (function(exports,talk,sock) {
 		  text
 		  image
 		  video             */
-	var mode		= 'dragging'
+	var mode		= 'drag'
 
 	// active modes
 	var dragging	= 0
@@ -30,7 +30,15 @@ modules['mindmap'] = (function(exports,talk,sock) {
 		$('#mouse-stat .info').text( e.offsetX+' : '+e.offsetY )
 	});
 
-	
+
+	function switchTool(name, click, drag, drop) {
+		
+	}
+
+
+	function dragClick(e) {
+		
+	}
 
 
 
