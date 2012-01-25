@@ -1,24 +1,32 @@
 (function() {
 	$(document).ready(function() {
-		console.log('loaded');
 
-			var wrapper = $("#canvasWrapper").click(canvasClicked);
+		drawInit();
+    $('canvas').click(canvasClicked);
 			
-      function canvasClicked(e) {
-        console.log('clicked');
-        var ctx = this.childNodes[0].getContext("2d");
-        //draw a circle
-        ctx.beginPath();
-        ctx.arc(e.clientX, e.clientY, 10, 0, Math.PI*2, true); 
-        ctx.closePath();
-        ctx.fill();
-      }
+    function canvasClicked(e) {
+      alert("clicked");
+		  $('#status').html(e.pageX +', '+ e.pageY);
+		  ix = e.pageX;
+		  iy = e.pageY;
+		  console.log(e.pageX +', '+ e.pageY);
+    }
 
     var socket = io.connect('http://localhost:3000');
     socket.on('news', function (data) {
-      console.log(data);
-      socket.emit('my other event', { my: 'data' });
+    	console.log(data);
+      	socket.emit('my other event', { my: 'data' });
     });
   });
 		
+	
+	
+	
+	function drawInit() {
+		var c=document.getElementById("canvas");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle="#FF0000";
+		ctx.fillRect(10,10,15,7);
+	}
+
 })();
