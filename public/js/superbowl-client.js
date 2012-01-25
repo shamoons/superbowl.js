@@ -5,11 +5,17 @@
     $('canvas').click(canvasClicked);
 			
     function canvasClicked(e) {
-      alert("clicked");
 		  $('#status').html(e.pageX +', '+ e.pageY);
 		  ix = e.pageX;
 		  iy = e.pageY;
 		  console.log(e.pageX +', '+ e.pageY);
+		  
+		  var ctx = this.getContext("2d");
+      //draw a circle
+      ctx.beginPath();
+      ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
+      ctx.closePath();
+      ctx.fill();
     }
 
     var socket = io.connect('http://localhost:3000');
