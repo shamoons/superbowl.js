@@ -4,8 +4,17 @@
  */
 
 var express = require('express');
+var mongoose = require('mongoose');
+
+config = require('./config/index.js');
 
 var app = module.exports = express.createServer();
+
+dsn = "mongodb://";
+if(config.database.username !== "" && config.database.password !== "")
+  dsn += config.database.username + ":" + config.database.password + "@";
+dsn += config.database.host + ":" + config.database.port + "/" + config.database.database;
+mongoose.connect(dsn, function(err) { if(err) throw err; })
 
 // Configuration
 
