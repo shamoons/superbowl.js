@@ -1,8 +1,27 @@
 body {
-  padding: 50px;
+  width: 99%;
+  height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#canvasWrapper {
+	border: 1px solid #999;
+	
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
 }
