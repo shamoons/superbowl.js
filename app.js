@@ -9,9 +9,9 @@ var mongoose = require('mongoose');
 config = require('./config/index.js');
 
 var app = module.exports = express.createServer();
-var io = require('socket.io').listen(app)
+var io = require('socket.io').listen(app);
 
-dsn = "mongodb://";
+var dsn = "mongodb://";
 if(config.database.username !== "" && config.database.password !== "")
   dsn += config.database.username + ":" + config.database.password + "@";
 dsn += config.database.host + ":" + config.database.port + "/" + config.database.database;
@@ -29,7 +29,7 @@ app.configure(function(){
 });
 
 // Routes
-var routes = require('./routes')(app)
+var routes = require('./routes')(app);
 var socketIO = require('./socket.io')(io);
 
 app.listen(3000);

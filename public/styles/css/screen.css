@@ -2,93 +2,64 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-}
-
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 114, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 10, ../sass/screen.scss */
+/*	Rounded Corners  */
+/*	Drop Shadows  */
+/*  Gradients  */
 body {
   width: 100%;
   height: 100%;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-/* line 16, ../sass/screen.scss */
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-/* line 20, ../sass/screen.scss */
+#header {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  right: 10px;
+  height: 70px; }
+  #header h1 span.title {
+    color: #0066CC; }
+  #header .dashboard {
+    border: 1px solid #bbb;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 400px; }
+    #header .dashboard .cell {
+      background: #f4f4f4;
+      border-left: 1px solid #bbb;
+      height: 100%;
+      width: 100px;
+      display: inline-block;
+      vertical-align: top; }
+      #header .dashboard .cell:first-child {
+        border: none; }
+      #header .dashboard .cell .label {
+        color: #999;
+        text-align: center;
+        height: 50%;
+        width: 100%;
+        line-height: 25px; }
+      #header .dashboard .cell .info {
+        text-align: center;
+        height: 50%;
+        width: 100%;
+        line-height: 25px; }
+  #header div#login {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 20px; }
+
 #container {
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
-}
+  bottom: 0px; }
 
-/* line 28, ../sass/screen.scss */
 #canvasWrapper {
   border: 1px solid #999;
   position: absolute;
@@ -96,10 +67,20 @@ a {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  overflow: hidden !important;
-}
+  overflow: hidden !important; }
+  #canvasWrapper #canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 5000px;
+    width: 5000px; }
+    #canvasWrapper #canvas div.item {
+      background: #f4f4f4;
+      padding: 5px 10px;
+      position: absolute;
+      left: 300px;
+      top: 300px; }
 
-/* line 39, ../sass/screen.scss */
 #bottomLinkWrapper {
   width: 60px;
   height: 15px;
@@ -110,5 +91,4 @@ a {
   z-index: 9999;
   color: white;
   text-align: center;
-  font-size: 8px;
-}
+  font-size: 8px; }
