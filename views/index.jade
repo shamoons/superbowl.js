@@ -1,10 +1,30 @@
 !!! 5
 html(lang="en")
   body
-    h1 SuperBowl.js
+    #header
+      h1
+        span.title MindMap : 
+        |SuperBowl.js
+
+      .dashboard
+        .cell#mouse-stat
+          .label mouse
+          .info --
+        .cell#canvas-stat
+          .label canvas
+          .info 0 : 0
+        .cell#delta-stat
+          .label delta
+          .info --
+        .cell#mode-stat
+          .label mode
+          .info dragging
+
+      #login
+        a Login
     #container
-      #canvasWrapper(style='overflow:hidden;')
-        canvas#canvas(width='9999px',height='9999px')
+      #canvasWrapper
+        #canvas
 
     #bottomLinkWrapper
       |Sign in!
