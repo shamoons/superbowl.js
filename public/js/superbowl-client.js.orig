@@ -12,13 +12,19 @@
 		  iy = e.pageY;
 		  
 		  var ctx = this.getContext("2d");
+<<<<<<< HEAD
       //draw a circle
       ctx.beginPath();
       ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
       ctx.closePath();
       ctx.fill();
 
+      window.socket.emit('click', { x: e.pageX, y: e.pageY });
+=======
+      drawClicked(ctx, ix, iy);
+    
       socket.emit('click', { x: e.pageX, y: e.pageY });
+>>>>>>> 55e77325097833c381d5214fa2dba99320296eee
     }
 
     window.socket.on('news', function (data) {
