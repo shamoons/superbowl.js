@@ -3,7 +3,8 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
-      "express": "2.4.6"
+      "express": "2.5.6"
     , "jade": ">= 0.0.1"
+    , "mongoose": "2.4.10"
   }
 }
