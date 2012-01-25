@@ -17,6 +17,6 @@ var LocationSchema = new Schema({
 var Entity = new Schema({
 	addedOn     : Date
   , data   	 	: Schema.Types.Mixed 
-  , location	: LocationSchema
+  , location	: { LocationSchema, index: true }
   , username    : String
 });
