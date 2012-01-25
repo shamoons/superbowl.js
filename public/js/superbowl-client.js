@@ -19,13 +19,10 @@
 
     socket.on('news', function (data) {
     	console.log(data);
-      	socket.emit('my other event', { my: 'data' });
+      socket.emit('my other event', { my: 'data' });
     });
   });
 		
-	
-	
-	
 	function drawInit() {
 		var c=document.getElementById("canvas");
 		var ctx=c.getContext("2d");

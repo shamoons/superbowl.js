@@ -1,0 +1,9 @@
+{
+  "database": {
+    "host": "ds029827.mongolab.com",
+    "port": "29827",
+    "database": "superbowljs",
+    "username": "superbowl",
+    "password": "js"
+  }
+}
