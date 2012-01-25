@@ -10,11 +10,11 @@ var LocationSchema = require('./schemas/locationSchema');
 	entity.save(); // entity will now get saved
 */
 
-var EntitySchema = new Schema({
+var EntitySchema = new mongoose.Schema({
 	addedOn     : Date
   , data   	 	: Schema.Types.Mixed 
   , location	: { LocationSchema, index: true }
-  , username    : String
+  , user_id   : String
 });
 
 exports.Entity = mongoose.model 'Entity', EntitySchema
