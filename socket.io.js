@@ -7,6 +7,7 @@ module.exports = function(io) {
   });
   
   io.sockets.on('click', function (socket) {
+    console.log("CLICK");
     socket.emit('news', { hello: 'world' });
   });
 
