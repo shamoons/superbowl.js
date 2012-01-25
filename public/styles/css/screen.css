@@ -99,7 +99,7 @@ a {
   overflow: hidden !important;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #bottomLinkWrapper {
   width: 60px;
   height: 15px;
@@ -113,12 +113,12 @@ a {
   font-size: 8px;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .escaper {
   position: absolute;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 #email-input {
   position: relative;
   width: 600px;
@@ -139,11 +139,11 @@ a {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   border-top: 1px solid #fff;
 }
-/* line 72, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #email-input form {
   float: right;
 }
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #email-input input.text {
   width: 580px;
   float: right;
@@ -163,11 +163,11 @@ a {
   -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
 }
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #email-input.default input.text {
   color: gray;
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #email-input .validator {
   right: 0;
   top: 25px;
@@ -175,11 +175,11 @@ a {
   position: absolute;
   color: maroon;
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #email-input .validator.valid {
   color: green;
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #email-input input.button {
   cursor: pointer;
   float: right;
@@ -209,7 +209,7 @@ a {
   padding: 0.5em 4em;
   text-shadow: 0 -1px 0 #444444;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #email-input input.button:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.3)), color-stop(80%, rgba(255, 255, 255, 0.1)));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
@@ -218,7 +218,7 @@ a {
   background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
 }
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #email-input input.button.cancel {
   clear: none;
   color: #000;
@@ -239,7 +239,7 @@ a {
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
   text-shadow: 0 1px 0 #dddddd;
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 #email-input input.button.cancel:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0.05)));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
@@ -248,7 +248,7 @@ a {
   background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
 }
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 #email-input .arrowtip {
   float: left;
   width: 32px;
@@ -258,7 +258,7 @@ a {
   left: 500px;
   top: -16px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #email-input .cross {
   position: absolute;
   right: -18px;
@@ -268,7 +268,7 @@ a {
   background-image: url(../images/icon-x.png);
   background-position: top left;
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #email-input .cross:hover {
   background-position: bottom left;
   cursor: pointer;
