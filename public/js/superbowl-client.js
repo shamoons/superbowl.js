@@ -7,6 +7,7 @@
 		var origin	= {x:0,y:0} // click position
 		var scale	= 1
 		
+		var mode		= 'dragging'
 		var dragging	= 0
 		var circle		= 0
 
@@ -14,21 +15,38 @@
 
 		drawInit();
     	$('canvas').click(canvasClicked);
+    	$('canvas').mousemove(canvasMoved);
+    	$('canvas').mouseup(canvasUpped);
 
     	function canvasClicked(e) {
 			$('#status').html(e.pageX +', '+ e.pageY);
 			console.log(e.pageX +', '+ e.pageY);
-			ix = e.pageX;
-			iy = e.pageY;
 
 			var ctx = this.getContext("2d");
 		     //draw a circle
-			if (circle) {
+			if (mode == 'circle') {
 				ctx.beginPath();
 				ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
 				ctx.closePath();
 				ctx.fill();
 			}
+			else if (mode == 'dragging') {
+				dragging = 1
+				origin = { x:e.pageX , y:e.pageY }
+				pos = $('#canvas').position()
+				origPos = { x:pos.x , y:pos.y}
+			}
+		}
+		
+		function canvasMoved(e) {
+			if (dragging && mode == 'dragging') {
+				
+			}
+		}
+		
+		function canvasUpped(e) {
+			dragging = 0
+			
 		}
 		
     	window.socket.on('news', function (data) {

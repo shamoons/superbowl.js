@@ -1,0 +1,275 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss.REMOTE.12725.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* line 16, ../sass/screen.scss.REMOTE.12725.scss */
+a {
+  color: #00B7FF;
+}
+
+/* line 20, ../sass/screen.scss.REMOTE.12725.scss */
+#container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/* line 28, ../sass/screen.scss.REMOTE.12725.scss */
+#canvasWrapper {
+  border: 1px solid #999;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden !important;
+}
+
+/* line 39, ../sass/screen.scss.REMOTE.12725.scss */
+#bottomLinkWrapper {
+  width: 60px;
+  height: 15px;
+  right: 0px;
+  position: fixed;
+  bottom: 0px;
+  background-color: silver;
+  z-index: 9999;
+  color: white;
+  text-align: center;
+  font-size: 8px;
+}
+
+/* line 58, ../sass/screen.scss.REMOTE.12725.scss */
+.escaper {
+  position: absolute;
+}
+
+/* line 62, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input {
+  position: relative;
+  width: 600px;
+  float: left;
+  padding: 0 10px 15px 7px;
+  background-color: #333;
+  left: -400px;
+  top: 18px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #fff;
+}
+/* line 73, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input form {
+  float: right;
+}
+/* line 76, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input input.text {
+  width: 580px;
+  float: right;
+  font-size: 24px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 6px;
+  margin-bottom: 0.5em;
+  margin-right: 2px;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) inset;
+}
+/* line 87, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input.default input.text {
+  color: gray;
+}
+/* line 90, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input .validator {
+  right: 0;
+  top: 25px;
+  padding-right: 18px;
+  position: absolute;
+  color: maroon;
+}
+/* line 96, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input .validator.valid {
+  color: green;
+}
+/* line 100, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input input.button {
+  cursor: pointer;
+  float: right;
+  clear: both;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #1175e5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.25)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  color: #fff;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #444;
+  font-size: 16px;
+  padding: 0.5em 4em;
+  text-shadow: 0 -1px 0 #444444;
+}
+/* line 115, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input input.button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.3)), color-stop(80%, rgba(255, 255, 255, 0.1)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.1) 80%);
+}
+/* line 118, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input input.button.cancel {
+  clear: none;
+  color: #000;
+  margin-right: 0.5em;
+  font-size: 16px;
+  padding: 0.5em 2em;
+  -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  background-color: #aaa;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.25)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0) 80%);
+  text-shadow: 0 1px 0 #dddddd;
+}
+/* line 129, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input input.button.cancel:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0.05)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.05));
+}
+/* line 134, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input .arrowtip {
+  float: left;
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/arrowtip.png);
+  position: relative;
+  left: 500px;
+  top: -16px;
+}
+/* line 143, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input .cross {
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  width: 48px;
+  height: 47px;
+  background-image: url(../images/icon-x.png);
+  background-position: top left;
+}
+/* line 151, ../sass/screen.scss.REMOTE.12725.scss */
+#email-input .cross:hover {
+  background-position: bottom left;
+  cursor: pointer;
+}
