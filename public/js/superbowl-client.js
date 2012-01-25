@@ -12,12 +12,8 @@
 		  iy = e.pageY;
 		  
 		  var ctx = this.getContext("2d");
-      //draw a circle
-      ctx.beginPath();
-      ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
-      ctx.closePath();
-      ctx.fill();
-
+      drawClicked(ctx, ix, iy);
+    
       socket.emit('click', { x: e.pageX, y: e.pageY });
     }
 
@@ -35,6 +31,14 @@
 		var ctx=c.getContext("2d");
 		ctx.fillStyle="#FF0000";
 		ctx.fillRect(10,10,15,7);
+	}
+	
+	
+	function drawClicked(canvas, x, y){
+	  canvas.beginPath();
+    canvas.arc(x, y, 10, 0, Math.PI*2, true); 
+    canvas.closePath();
+    canvas.fill();
 	}
 
 })();
