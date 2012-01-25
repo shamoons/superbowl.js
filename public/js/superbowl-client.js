@@ -4,7 +4,7 @@
 
 		drawInit();
     $('canvas').click(canvasClicked);
-			
+
     function canvasClicked(e) {
 		  $('#status').html(e.pageX +', '+ e.pageY);
 		  console.log(e.pageX +', '+ e.pageY);
@@ -17,8 +17,6 @@
       ctx.arc(ix, iy, 10, 0, Math.PI*2, true); 
       ctx.closePath();
       ctx.fill();
-
-      socket.emit('click', { x: e.pageX, y: e.pageY });
     }
 
     window.socket.on('news', function (data) {
