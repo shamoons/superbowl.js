@@ -1,11 +1,11 @@
-# Infinidea.net [I have registered this, also infinidea.org and infinitepasteboard.com]
+# Infinidea.net\*
 
 
 Infinidea is an online realtime collaborative pasteboard app. 
 
 **What does that mean?**
 
-Well... It means that on an infinitely wide canvas in a web browser, multiple users can post and rearrange text, images, videos, [and other as-of-yet-unnamed wondrous web widgets], all at the same time. There are also basic drawing tools, so that you can draw and paint on the pasteboard in realtime as well. [Obviously, this might not fly, but I just thought I'd throw it in there.]
+Well... It means that on an infinitely wide canvas in a web browser, multiple users can post and rearrange text, images, videos, [and other as-of-yet-unnamed wondrous web widgets], all at the same time. 
 
 Imagine a team at a startup brainstorming an idea around a whiteboard, or a family sitting around a table making a collage of old photographs and newspaper clippings on colorful posterboard. Now imagine both of those things being done by people in different parts of the country. Now imagine something else that we can't even think of yet. Whatever you can think of, you can do it with Infinidea.
 
@@ -21,7 +21,7 @@ Of course, if you need to, you can set up a user account and password-protect yo
 But we think it's best if you start out with the open version. No muss, no fuss. Try it out for a while. See what you think, and let us know how you used it. We're very curious to see what people are going to do with this.
 
 
-### Paste
+### Paste and rearrange stuff
 
 To add stuff to the pasteboard, just drag and drop text, images, videos, whatever. Once they're on, you can click and drag the items around the board to place them wherever you want. If you click and drag on the pasteboard away from any item, it will drag the whole board in that direction, just like in Google Maps. Keep in mind that someone else might be trying to move it at the same time! Be patient. Perhaps open up a chat window if you find yourself fighting over which location on the pasteboard you want to be working on. [Should we have a chat feature embedded in the app?]
 
@@ -32,13 +32,11 @@ There are also other kinds of controls for specific kinds of items. For instance
 And of course, last but not least, you can change the background color of the pasteboard to whatever you want.
 
 
-### Draw [once again, I know this might not be compatible with the rest of it]
-
-There is also a paintbrush, which you can select on the side of the window. There are basic controls to change the color, the width, and the softness of the brush.
-
-
 ### See patterns
 
 Off to the side you have a series of buttons which can change the view in various ways, yet to be determined. Colored lines between all the items pasted by specific people? A button to reorganize the positions of all the items based on various factors that I can't think of yet?
 
+
+
+\* I have registered this, also infinidea.org and infinitepasteboard.com. No worries if we don't use them. 
 
