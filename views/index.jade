@@ -3,25 +3,26 @@ html(lang="en")
   body
     #header
       h1
-        span.title MindMap : 
-        |SuperBowl.js
+        span.title superbowl
+        |.js
+      .menu
+        .button(id='btn-reset-view') reset view
+        .button foo
+        .button bar
+      
+      .centralizer
+        .sharebox
+          .menutext 
+            span(class='light') bow.ly/
+          input(value='myha5h')
+          .button share!
 
-      .dashboard
-        .cell#mouse-stat
-          .label mouse
-          .info --
-        .cell#canvas-stat
-          .label position
-          .info 0 : 0
-        .cell#delta-stat
-          .label delta
-          .info --
-        .cell#mode-stat
-          .label mode
-          .info dragging
+      .login-btn
+        .button(id='login-button') log in      
+        .menutext to see all your stuff
+        
+        
 
-      #login
-        a Login
     #container
       #canvasWrapper
         #canvas
@@ -33,3 +34,28 @@ html(lang="en")
 
     #bottomLinkWrapper
       |Sign in!
+    
+    .dashboard
+      .cell#mouse-stat
+        .label mouse
+        .info --
+      .cell#canvas-stat
+        .label position
+        .info 0 : 0
+      .cell#delta-stat
+        .label delta
+        .info --
+      .cell#mode-stat
+        .label mode
+        .info dragging
+    #login-window  
+      .login-center-window 
+        h1 Sign in
+        p E-Mail:
+        input(type="text",value="your@address.com",id="email-address",class="text")
+        p Password:
+        input(type="password",value="password",id="password",class="text")
+        p
+        input(type="button",value="Let's do this!",class="button highlight",id="btn-login-submit") 
+        br
+        input(type="button",value="Never mind.",class="button",id="btn-login-cancel")
