@@ -63,32 +63,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 body {
   width: 100%;
   height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 a {
   color: #0066cc;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 h1 {
   padding: 0.5em 0;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  text-shadow: 0 1px 1px #4da6ff;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 span.title {
   color: #0066cc;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #header {
   z-index: 9999;
   overflow: hidden;
@@ -110,7 +110,7 @@ span.title {
   right: 0;
   height: 48px;
 }
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 #header h1 {
   padding: 8px;
   font-size: 24px;
@@ -118,25 +118,12 @@ span.title {
   font-weight: bold;
   float: left;
 }
-/* line 70, ../sass/screen.scss */
-#header div#login {
-  display: none;
-  position: absolute;
-  top: 25px;
-  right: 20px;
-}
-/* line 77, ../sass/screen.scss */
-#header .menu {
+/* line 71, ../sass/screen.scss */
+#header .button {
   position: relative;
   float: left;
-  margin-left: 20px;
-  top: 12px;
-}
-/* line 83, ../sass/screen.scss */
-#header .menu .button {
-  float: left;
   padding: 2px 10px;
-  margin-right: 10px;
+  top: 1px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -155,13 +142,79 @@ span.title {
   -o-box-shadow: 0 1px 1px black;
   box-shadow: 0 1px 1px black;
 }
-/* line 92, ../sass/screen.scss */
-#header .menu .button:hover {
+/* line 81, ../sass/screen.scss */
+#header .button:hover {
   background-color: rgba(255, 255, 255, 0.05);
   cursor: pointer;
 }
+/* line 86, ../sass/screen.scss */
+#header .menu {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  top: 12px;
+  font-size: 14px;
+}
+/* line 93, ../sass/screen.scss */
+#header .menu .button {
+  margin-right: 10px;
+}
+/* line 97, ../sass/screen.scss */
+#header .centralizer {
+  position: relative;
+  margin-left: 70%;
+  left: 0;
+}
+/* line 102, ../sass/screen.scss */
+#header .sharebox {
+  position: relative;
+  margin-left: -100%;
+  float: left;
+  top: 12px;
+}
+/* line 109, ../sass/screen.scss */
+#header input {
+  background: transparent;
+  margin: 0 6px 0 1px;
+  border: none;
+  border-bottom: 1px solid #555555;
+  color: #fff;
+  padding: 4px 2px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: inset 0 2px 2px black;
+  -webkit-box-shadow: inset 0 2px 2px black;
+  -o-box-shadow: inset 0 2px 2px black;
+  box-shadow: inset 0 2px 2px black;
+  font-size: 14px;
+  float: left;
+  width: 100px;
+}
+/* line 122, ../sass/screen.scss */
+#header .menutext {
+  float: left;
+  top: 4px;
+  position: relative;
+  display: block;
+  margin-left: 5px;
+}
+/* line 129, ../sass/screen.scss */
+#header .login-btn {
+  position: relative;
+  top: 12px;
+  float: right;
+  margin-right: 10px;
+}
+/* line 136, ../sass/screen.scss */
+#header span.light {
+  color: #336699;
+}
 
-/* line 103, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #container {
   position: absolute;
   top: 0;
@@ -170,7 +223,7 @@ span.title {
   bottom: 0;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #canvasWrapper {
   border-top: 1px solid #000;
   position: absolute;
@@ -181,7 +234,7 @@ span.title {
   overflow: hidden !important;
   background-color: #f4f4f4;
 }
-/* line 123, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #canvasWrapper #canvas {
   position: absolute;
   top: 0px;
@@ -189,7 +242,7 @@ span.title {
   height: 5000px;
   width: 5000px;
 }
-/* line 130, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #canvasWrapper #canvas div.item {
   background: #f4f4f4;
   padding: 5px 10px;
@@ -198,7 +251,7 @@ span.title {
   top: 300px;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #bottomLinkWrapper {
   width: 60px;
   height: 15px;
@@ -212,7 +265,7 @@ span.title {
   font-size: 8px;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .dashboard {
   border: 1px solid #bbbbbb;
   height: 50px;
@@ -220,7 +273,7 @@ span.title {
   top: 55px;
   left: 400px;
 }
-/* line 164, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .dashboard .cell {
   background: #fff;
   color: #000;
@@ -230,11 +283,11 @@ span.title {
   display: inline-block;
   vertical-align: top;
 }
-/* line 172, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .dashboard .cell:first-child {
   border: none;
 }
-/* line 173, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .dashboard .cell .label {
   color: #999999;
   text-align: center;
@@ -242,7 +295,7 @@ span.title {
   width: 100%;
   line-height: 25px;
 }
-/* line 180, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .dashboard .cell .info {
   text-align: center;
   height: 50%;
