@@ -211,15 +211,16 @@ span.title {
   font-size: 8px;
 }
 
-.center-window {
+#login-window {
   left: 50%;  
   position:relative;
   float:left;
+  display:none;
 }
 
 
 //log in
-#logInWindow {
+.login-center-window {
   width: 300px;
   height: 400px;
   top: $header-height * 1.5;

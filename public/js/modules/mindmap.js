@@ -35,6 +35,16 @@ modules['mindmap'] = (function(exports,talk,sock) {
     $('#canvas').css('left', 0);
     $('#canvas').css('top', 0);
   });
+  $('#login-button').bind('click', function(e) {
+    $('#login-window').show();
+  });
+  $('#btn-login-submit').bind('click', function(e) {
+    $('#login-window').hide();    
+  });
+  $('#btn-login-cancel').bind('click', function(e) {
+    $('#login-window').hide();    
+  });
+  
 
 
 

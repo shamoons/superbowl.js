@@ -18,7 +18,7 @@ html(lang="en")
           .button share!
 
       .login-btn
-        .button log in      
+        .button(id='login-button') log in      
         .menutext to see all your stuff
         
         
@@ -48,8 +48,8 @@ html(lang="en")
       .cell#mode-stat
         .label mode
         .info dragging
-    .center-window  
-      #logInWindow
+    #login-window  
+      .login-center-window 
         h1 Sign in
         p E-Mail:
         input(type="text",value="your@address.com",id="email-address",class="text")
