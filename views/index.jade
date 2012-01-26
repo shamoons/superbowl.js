@@ -3,25 +3,17 @@ html(lang="en")
   body
     #header
       h1
-        span.title MindMap : 
-        |SuperBowl.js
-
-      .dashboard
-        .cell#mouse-stat
-          .label mouse
-          .info --
-        .cell#canvas-stat
-          .label position
-          .info 0 : 0
-        .cell#delta-stat
-          .label delta
-          .info --
-        .cell#mode-stat
-          .label mode
-          .info dragging
+        span.title superbowl
+        |.js
+      .menu
+        .button reset view
+        .button do this
+        .button do that 
 
       #login
         a Login
+        
+
     #container
       #canvasWrapper
         #canvas
@@ -33,3 +25,18 @@ html(lang="en")
 
     #bottomLinkWrapper
       |Sign in!
+    
+    .dashboard
+      .cell#mouse-stat
+        .label mouse
+        .info --
+      .cell#canvas-stat
+        .label position
+        .info 0 : 0
+      .cell#delta-stat
+        .label delta
+        .info --
+      .cell#mode-stat
+        .label mode
+        .info dragging
+  
