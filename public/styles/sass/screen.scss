@@ -39,11 +39,44 @@ h1 {
   @include text-shadow(0 1px 1px lighten($highlight1, 25));
 }
 
+input {
+  font-size: $font-size-normal;
+}
+
 span.title {
   color: $highlight1;
 }
 
 //CUSTOM / APP
+
+.button, input.button {
+   position: relative;
+   float: left;
+   padding: 2px 10px;
+   top:1px;
+   @include border-radius(3px);
+   border: 1px solid lighten($dark, 20);
+
+   $btn-color-offset: 5;
+   
+   @include background-image(linear-gradient(top, lighten($dark, $btn-color-offset +5), lighten($dark, $btn-color-offset)));
+   @include box-shadow(0 1px 1px #000);
+   color: #fff;
+   &:hover {
+     @include background-image(linear-gradient(top, lighten($dark, $btn-color-offset +10), lighten($dark, $btn-color-offset +5)));
+     cursor: pointer;
+  }
+  &.highlight {
+    $btn-color-offset: 10;
+     @include background-image(linear-gradient(top, lighten($highlight1, $btn-color-offset +15), lighten($highlight1, $btn-color-offset)));
+     @include box-shadow(0 1px 1px #000);
+     color: #fff;
+     &:hover {
+       @include background-image(linear-gradient(top, lighten($highlight1, $btn-color-offset +20), lighten($highlight1, $btn-color-offset +5)));
+       cursor: pointer;
+    }   
+  }
+}
 
 #header {
   $top-offset: 12px;
@@ -68,21 +101,7 @@ span.title {
     font-weight: bold;
     float: left;    
   }
-  .button {
-    position: relative;
-    float: left;
-    padding: 2px 10px;
-    top:1px;
-    @include border-radius(3px);
-    border: 1px solid lighten($dark, 20);
-    $btnColor: rgba(255,255,255, 0.05);
-    @include background-image(linear-gradient(top, lighten($btnColor, 40), $btnColor));
-    @include box-shadow(0 1px 1px #000);
-    &:hover {
-      background-color: $btnColor;
-      cursor: pointer;
-   }
- }
+
   .menu {
     position: relative;
     float: left;
@@ -190,6 +209,49 @@ span.title {
   color: white;
   text-align: center;
   font-size: 8px;
+}
+
+.center-window {
+  left: 50%;  
+  position:relative;
+  float:left;
+}
+
+
+//log in
+#logInWindow {
+  width: 300px;
+  height: 400px;
+  top: $header-height * 1.5;
+  left: -50%;  
+  position:relative;
+
+  background-color: $dark;
+  @include box-shadow(0 2px 5px #000);
+  @include border-radius(10px);
+  color: #fff;
+  padding: 10px 20px;
+  
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  input.text{
+    font-size: 24px;
+    margin:0.25em 0 1em 0;
+  }  
+  
+  input.button {
+    padding: 0.5em 0;
+  }
+  input.button.highlight {
+    font-size: 24px;
+    margin-bottom:10px;
+  }
 }
 
 

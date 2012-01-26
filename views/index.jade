@@ -48,4 +48,14 @@ html(lang="en")
       .cell#mode-stat
         .label mode
         .info dragging
-  
+    .center-window  
+      #logInWindow
+        h1 Sign in
+        p E-Mail:
+        input(type="text",value="your@address.com",id="email-address",class="text")
+        p Password:
+        input(type="password",value="password",id="password",class="text")
+        p
+        input(type="button",value="Let's do this!",class="button highlight",id="btn-login-submit") 
+        br
+        input(type="button",value="Never mind.",class="button",id="btn-login-cancel")
