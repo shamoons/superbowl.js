@@ -134,26 +134,27 @@ modules['mindmap'] = (function(exports,talk,sock) {
     },
     // handle keyboard events
     keydown: function(e) {
+        
       // up
-      if (e.keyCode == 38) {
+      if (e.which == 38) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(0, 20)
       }
       // left
-      else if (e.keyCode == 37) {
+      else if (e.which == 37) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(20, 0)
       }
       // right
-      else if (e.keyCode == 39) {
+      else if (e.which == 39) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(-20, 0)
       }
       // down
-      else if (e.keyCode == 40) {
+      else if (e.which == 40) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(0, -20)
@@ -164,9 +165,6 @@ modules['mindmap'] = (function(exports,talk,sock) {
   		panTool.dragging = 0
     }
   };
-
-
-
 
   // Text tool
   var textTool = {
@@ -196,25 +194,25 @@ modules['mindmap'] = (function(exports,talk,sock) {
     // handle keyboard events
     keydown: function(e) {
       // up
-      if (e.keyCode == 38) {
+      if (e.which == 38) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(0, 20)
       }
       // left
-      else if (e.keyCode == 37) {
+      else if (e.which == 37) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(20, 0)
       }
       // right
-      else if (e.keyCode == 39) {
+      else if (e.which == 39) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(-20, 0)
       }
       // down
-      else if (e.keyCode == 40) {
+      else if (e.which == 40) {
         e.preventDefault()
         panTool._triangulate()
         panTool._move(0, -20)
