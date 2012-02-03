@@ -78,6 +78,21 @@ span.title {
   }
 }
 
+#slideDownTab {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 50px;
+  height: 70px;
+  background-color: $dark;
+  @include background-image(linear-gradient(top, lighten($dark, 10), $dark));
+  @include box-shadow(0 2px 4px rgba(#000, 0.5));  
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  z-index: 9998;
+  cursor: pointer;
+}
+
 #header {
   $top-offset: 12px;
   
@@ -168,14 +183,14 @@ span.title {
 }
 
 #canvasWrapper {
-	border-top: 1px solid #000;	
 	position: absolute;
-	top: $header-height;
+	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	overflow: hidden !important;
 	background-color: $bg;
+	background-image: url(/images/bgnoise.gif);
 	
   // TODO: css3 transitions
   // for position changes

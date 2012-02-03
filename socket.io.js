@@ -1,7 +1,8 @@
-fs = require('fs');
-jade = require('jade');
+var fs = require('fs');
+var jade = require('jade');
 
-var authenticationWindowHTML = null;
+var static    = require('./controllers/static');
+//var user      = require('./controllers/user');
 
 module.exports = function(io) {
   io.sockets.on('connection', function (socket) {
@@ -16,6 +17,7 @@ module.exports = function(io) {
     });
 
     socket.on('shamoon', function (data) {
+      user.loadWindow()
       fs.readFile(__dirname + '/views/client/authenticationWindow.jade', 'ascii', function(err, data) {
         html = jade.compile(data)();
         socket.emit('loadAuthenticationWindow', { html: html });
