@@ -1,7 +1,24 @@
 (function() {
 	$(document).ready(function() {
-		var socket = io.connect();
-    	//window.socket = io.connect('http://localhost:3000');
+	  // Load pasteboard
+	  (function() {
+      var screenWidth = screen.width;
+      var screenHeight = screen.height;
+      $('#pasteboard').css('top', 0);
+      $('#pasteboard').css('left', 0);
+      $('#pasteboard').css('width', screenWidth);
+  	  $('#pasteboard').css('height', screenHeight);
+
+      $('#inner').css('width', screenWidth * 3);
+      $('#inner').css('height', screenHeight * 3);
+      $('#inner').css('left', screenWidth / 2 - screenWidth);
+      $('#inner').css('top', screenHeight / 2 - screenHeight);
+  	  
+      $('#pasteboard').kinetic();
+	  })();
+	  
+		//var socket = io.connect();
+    window.socket = io.connect('http://localhost:3000');
     var app = {
         socket: socket,
         talk: {},
