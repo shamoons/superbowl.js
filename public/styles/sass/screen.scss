@@ -194,43 +194,13 @@ span.title {
 
 #inner {
 	background-image: url(/images/bgnoise.gif);
+	position: relative;
 }
 
-#container {
-	position: absolute;
-	top:$world-margin;
-	left:$world-margin;
-	right: $world-margin;
-	bottom: $world-margin;
-}
-
-#canvasWrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	overflow: hidden !important;
-	background-color: $bg;
-	background-image: url(/images/bgnoise.gif);
-	
-  // TODO: css3 transitions
-  // for position changes
-  #canvas {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 5000px;
-    width: 5000px;
-
-    div.item {
-      background: $bg;
-      padding: 5px 10px;
-      position: absolute;
-      left: 300px;
-      top: 300px;
-    }
-  }	
+.element {
+  position: absolute;
+  top: 700px;
+  left: 700px;
 }
 
 #login-window {
