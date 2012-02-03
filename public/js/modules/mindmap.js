@@ -29,22 +29,7 @@ modules['mindmap'] = (function(exports,talk,sock) {
   var circle		= 0
 
 
-  // menu bar
-  $('#btn-reset-view').bind('click', function(e) {
-    //TODO extract to reset method
-    $('#canvas').css('left', 0);
-    $('#canvas').css('top', 0);
-  });
-  $('#login-button').bind('click', function(e) {
-    $('#login-window').show();
-  });
-  $('#btn-login-submit').bind('click', function(e) {
-    $('#login-window').hide();    
-  });
-  $('#btn-login-cancel').bind('click', function(e) {
-    $('#login-window').hide();    
-  });
-  
+
 
 
 
