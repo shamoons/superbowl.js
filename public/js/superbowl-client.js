@@ -1,7 +1,19 @@
 (function() {
 	$(document).ready(function() {
-		var socket = io.connect();
-    	//window.socket = io.connect('http://localhost:3000');
+	  // Load pasteboard
+	  (function() {
+      var screenWidth = screen.width;
+      var screenHeight = screen.height;
+  	  $('#pasteboard').css('width', screenWidth * 3);
+  	  $('#pasteboard').css('height', screenHeight * 3);
+  	  $('#pasteboard').css('left', screenWidth / 2 - screenWidth);
+  	  $('#pasteboard').css('top', screenHeight / 2 - screenHeight);
+  	  
+  	  $('#pasteboard').kinetic();
+	  })();
+	  
+		//var socket = io.connect();
+    window.socket = io.connect('http://localhost:3000');
     var app = {
         socket: socket,
         talk: {},

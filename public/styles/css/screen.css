@@ -68,14 +68,15 @@ body {
   width: 100%;
   height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 a {
   color: #0066cc;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 h1 {
   padding: 0.5em 0;
   font-size: 32px;
@@ -83,17 +84,17 @@ h1 {
   text-shadow: 0 1px 1px #4da6ff;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 input {
   font-size: 14px;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 span.title {
   color: #0066cc;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .button, input.button {
   position: relative;
   float: left;
@@ -118,7 +119,7 @@ span.title {
   box-shadow: 0 1px 1px black;
   color: #fff;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .button:hover, input.button:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #484848), color-stop(100%, #3c3c3c));
   background-image: -webkit-linear-gradient(top, #484848, #3c3c3c);
@@ -128,7 +129,7 @@ span.title {
   background-image: linear-gradient(top, #484848, #3c3c3c);
   cursor: pointer;
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .button:active, input.button:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f2f2f), color-stop(100%, #3c3c3c));
   background-image: -webkit-linear-gradient(top, #2f2f2f, #3c3c3c);
@@ -142,7 +143,7 @@ span.title {
   box-shadow: inset 0 1px 1px #222222;
   margin-top: 1px;
 }
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .button.highlight, input.button.highlight {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4da6ff), color-stop(100%, #007fff));
   background-image: -webkit-linear-gradient(top, #4da6ff, #007fff);
@@ -156,7 +157,7 @@ span.title {
   box-shadow: 0 1px 1px black;
   color: #fff;
 }
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .button.highlight:hover, input.button.highlight:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a8cff), color-stop(100%, #66b2ff));
   background-image: -webkit-linear-gradient(top, #1a8cff, #66b2ff);
@@ -166,7 +167,7 @@ span.title {
   background-image: linear-gradient(top, #1a8cff, #66b2ff);
   cursor: pointer;
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .button.highlight:active, input.button.highlight:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #66b2ff), color-stop(100%, #1a8cff));
   background-image: -webkit-linear-gradient(top, #66b2ff, #1a8cff);
@@ -181,7 +182,31 @@ span.title {
   margin-top: 1px;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
+#slideDownTab {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 50px;
+  height: 70px;
+  background-color: #222222;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3c3c3c), color-stop(100%, #222222));
+  background-image: -webkit-linear-gradient(top, #3c3c3c, #222222);
+  background-image: -moz-linear-gradient(top, #3c3c3c, #222222);
+  background-image: -o-linear-gradient(top, #3c3c3c, #222222);
+  background-image: -ms-linear-gradient(top, #3c3c3c, #222222);
+  background-image: linear-gradient(top, #3c3c3c, #222222);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  z-index: 9998;
+  cursor: pointer;
+}
+
+/* line 111, ../sass/screen.scss */
 #header {
   z-index: 9999;
   overflow: hidden;
@@ -203,7 +228,7 @@ span.title {
   right: 0;
   height: 48px;
 }
-/* line 97, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #header h1 {
   padding: 8px;
   font-size: 24px;
@@ -211,7 +236,7 @@ span.title {
   font-weight: bold;
   float: left;
 }
-/* line 105, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #header .menu {
   position: relative;
   float: left;
@@ -219,24 +244,24 @@ span.title {
   top: 12px;
   font-size: 14px;
 }
-/* line 112, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 #header .menu .button {
   margin-right: 10px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 #header .centralizer {
   position: relative;
   margin-left: 70%;
   left: 0;
 }
-/* line 121, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #header .sharebox {
   position: relative;
   margin-left: -100%;
   float: left;
   top: 12px;
 }
-/* line 128, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #header input {
   background: transparent;
   margin: 0 6px 0 1px;
@@ -258,7 +283,7 @@ span.title {
   float: left;
   width: 100px;
 }
-/* line 141, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #header .menutext {
   float: left;
   top: 4px;
@@ -266,19 +291,25 @@ span.title {
   display: block;
   margin-left: 5px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #header .login-btn {
   position: relative;
   top: 12px;
   float: right;
   margin-right: 10px;
 }
-/* line 155, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #header span.light {
   color: #336699;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
+#pasteboard {
+  position: absolute;
+  background-image: url(/images/bgnoise.gif);
+}
+
+/* line 195, ../sass/screen.scss */
 #container {
   position: absolute;
   top: 0;
@@ -287,7 +318,7 @@ span.title {
   bottom: 0;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #canvasWrapper {
   position: absolute;
   top: 0;
@@ -298,7 +329,7 @@ span.title {
   background-color: #f4f4f4;
   background-image: url(/images/bgnoise.gif);
 }
-/* line 182, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #canvasWrapper #canvas {
   position: absolute;
   top: 0px;
@@ -306,7 +337,7 @@ span.title {
   height: 5000px;
   width: 5000px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 #canvasWrapper #canvas div.item {
   background: #f4f4f4;
   padding: 5px 10px;
@@ -315,21 +346,7 @@ span.title {
   top: 300px;
 }
 
-/* line 201, ../sass/screen.scss */
-#bottomLinkWrapper {
-  width: 60px;
-  height: 15px;
-  right: 0px;
-  position: fixed;
-  bottom: 0px;
-  background-color: silver;
-  z-index: 9999;
-  color: white;
-  text-align: center;
-  font-size: 8px;
-}
-
-/* line 214, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #login-window {
   left: 50%;
   position: relative;
@@ -337,7 +354,7 @@ span.title {
   display: none;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .login-center-window {
   width: 300px;
   height: 400px;
@@ -358,30 +375,30 @@ span.title {
   color: #fff;
   padding: 10px 20px;
 }
-/* line 236, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .login-center-window h1 {
   margin-bottom: 0.5em;
 }
-/* line 240, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .login-center-window input {
   width: 100%;
 }
-/* line 244, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .login-center-window input.text {
   font-size: 24px;
   margin: 0.25em 0 1em 0;
 }
-/* line 249, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .login-center-window input.button {
   padding: 0.5em 0;
 }
-/* line 252, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .login-center-window input.button.highlight {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .dashboard {
   border: 1px solid #bbbbbb;
   height: 50px;
@@ -389,7 +406,7 @@ span.title {
   top: 55px;
   left: 400px;
 }
-/* line 267, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .dashboard .cell {
   background: #fff;
   color: #000;
@@ -399,11 +416,11 @@ span.title {
   display: inline-block;
   vertical-align: top;
 }
-/* line 275, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .dashboard .cell:first-child {
   border: none;
 }
-/* line 276, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .dashboard .cell .label {
   color: #999999;
   text-align: center;
@@ -411,7 +428,7 @@ span.title {
   width: 100%;
   line-height: 25px;
 }
-/* line 283, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .dashboard .cell .info {
   text-align: center;
   height: 50%;
