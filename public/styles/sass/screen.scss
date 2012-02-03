@@ -65,16 +65,30 @@ span.title {
    &:hover {
      @include background-image(linear-gradient(top, lighten($dark, $btn-color-offset +10), lighten($dark, $btn-color-offset +5)));
      cursor: pointer;
-  }
+   }
+   &:active {
+      $active-btn-color-offset: $btn-color-offset - 5;     
+      @include background-image(linear-gradient(top, lighten($dark, $active-btn-color-offset + 5), lighten($dark, $active-btn-color-offset +10)));
+      @include box-shadow(inset 0 1px 1px #222);
+      margin-top:1px;
+    }
+  
   &.highlight {
     $btn-color-offset: 10;
      @include background-image(linear-gradient(top, lighten($highlight1, $btn-color-offset +15), lighten($highlight1, $btn-color-offset)));
      @include box-shadow(0 1px 1px #000);
      color: #fff;
      &:hover {
-       @include background-image(linear-gradient(top, lighten($highlight1, $btn-color-offset +20), lighten($highlight1, $btn-color-offset +5)));
+       @include background-image(linear-gradient(top, lighten($highlight1, $btn-color-offset +5), lighten($highlight1, $btn-color-offset +20)));
        cursor: pointer;
     }   
+    &:active {
+       $active-btn-color-offset: $btn-color-offset - 5;     
+       @include background-image(linear-gradient(top, lighten($highlight1, $btn-color-offset +20), lighten($highlight1, $btn-color-offset +5)));
+       @include box-shadow(inset 0 3px 5px darken($highlight1, 20));
+       margin-top:1px;
+     }
+    
   }
 }
 

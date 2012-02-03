@@ -129,6 +129,20 @@ span.title {
   cursor: pointer;
 }
 /* line 69, ../sass/screen.scss */
+.button:active, input.button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f2f2f), color-stop(100%, #3c3c3c));
+  background-image: -webkit-linear-gradient(top, #2f2f2f, #3c3c3c);
+  background-image: -moz-linear-gradient(top, #2f2f2f, #3c3c3c);
+  background-image: -o-linear-gradient(top, #2f2f2f, #3c3c3c);
+  background-image: -ms-linear-gradient(top, #2f2f2f, #3c3c3c);
+  background-image: linear-gradient(top, #2f2f2f, #3c3c3c);
+  -moz-box-shadow: inset 0 1px 1px #222222;
+  -webkit-box-shadow: inset 0 1px 1px #222222;
+  -o-box-shadow: inset 0 1px 1px #222222;
+  box-shadow: inset 0 1px 1px #222222;
+  margin-top: 1px;
+}
+/* line 76, ../sass/screen.scss */
 .button.highlight, input.button.highlight {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4da6ff), color-stop(100%, #007fff));
   background-image: -webkit-linear-gradient(top, #4da6ff, #007fff);
@@ -142,42 +156,32 @@ span.title {
   box-shadow: 0 1px 1px black;
   color: #fff;
 }
-/* line 74, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .button.highlight:hover, input.button.highlight:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a8cff), color-stop(100%, #66b2ff));
+  background-image: -webkit-linear-gradient(top, #1a8cff, #66b2ff);
+  background-image: -moz-linear-gradient(top, #1a8cff, #66b2ff);
+  background-image: -o-linear-gradient(top, #1a8cff, #66b2ff);
+  background-image: -ms-linear-gradient(top, #1a8cff, #66b2ff);
+  background-image: linear-gradient(top, #1a8cff, #66b2ff);
+  cursor: pointer;
+}
+/* line 85, ../sass/screen.scss */
+.button.highlight:active, input.button.highlight:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #66b2ff), color-stop(100%, #1a8cff));
   background-image: -webkit-linear-gradient(top, #66b2ff, #1a8cff);
   background-image: -moz-linear-gradient(top, #66b2ff, #1a8cff);
   background-image: -o-linear-gradient(top, #66b2ff, #1a8cff);
   background-image: -ms-linear-gradient(top, #66b2ff, #1a8cff);
   background-image: linear-gradient(top, #66b2ff, #1a8cff);
-  cursor: pointer;
+  -moz-box-shadow: inset 0 3px 5px #003366;
+  -webkit-box-shadow: inset 0 3px 5px #003366;
+  -o-box-shadow: inset 0 3px 5px #003366;
+  box-shadow: inset 0 3px 5px #003366;
+  margin-top: 1px;
 }
 
 /* line 81, ../sass/screen.scss */
-#slideDownTab {
-  position: fixed;
-  top: 0;
-  right: 10px;
-  width: 50px;
-  height: 70px;
-  background-color: #222222;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3c3c3c), color-stop(100%, #222222));
-  background-image: -webkit-linear-gradient(top, #3c3c3c, #222222);
-  background-image: -moz-linear-gradient(top, #3c3c3c, #222222);
-  background-image: -o-linear-gradient(top, #3c3c3c, #222222);
-  background-image: -ms-linear-gradient(top, #3c3c3c, #222222);
-  background-image: linear-gradient(top, #3c3c3c, #222222);
-  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  border-bottom-right-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;
-  z-index: 9998;
-  cursor: pointer;
-}
-
-/* line 96, ../sass/screen.scss */
 #header {
   z-index: 9999;
   overflow: hidden;
@@ -199,7 +203,7 @@ span.title {
   right: 0;
   height: 48px;
 }
-/* line 112, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #header h1 {
   padding: 8px;
   font-size: 24px;
@@ -207,7 +211,7 @@ span.title {
   font-weight: bold;
   float: left;
 }
-/* line 120, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #header .menu {
   position: relative;
   float: left;
@@ -215,24 +219,24 @@ span.title {
   top: 12px;
   font-size: 14px;
 }
-/* line 127, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #header .menu .button {
   margin-right: 10px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 #header .centralizer {
   position: relative;
   margin-left: 70%;
   left: 0;
 }
-/* line 136, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #header .sharebox {
   position: relative;
   margin-left: -100%;
   float: left;
   top: 12px;
 }
-/* line 143, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #header input {
   background: transparent;
   margin: 0 6px 0 1px;
@@ -254,7 +258,7 @@ span.title {
   float: left;
   width: 100px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 #header .menutext {
   float: left;
   top: 4px;
@@ -262,19 +266,19 @@ span.title {
   display: block;
   margin-left: 5px;
 }
-/* line 163, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #header .login-btn {
   position: relative;
   top: 12px;
   float: right;
   margin-right: 10px;
 }
-/* line 170, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #header span.light {
   color: #336699;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #container {
   position: absolute;
   top: 0;
@@ -283,7 +287,7 @@ span.title {
   bottom: 0;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #canvasWrapper {
   position: absolute;
   top: 0;
@@ -294,7 +298,7 @@ span.title {
   background-color: #f4f4f4;
   background-image: url(/images/bgnoise.gif);
 }
-/* line 197, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #canvasWrapper #canvas {
   position: absolute;
   top: 0px;
@@ -302,7 +306,7 @@ span.title {
   height: 5000px;
   width: 5000px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #canvasWrapper #canvas div.item {
   background: #f4f4f4;
   padding: 5px 10px;
@@ -311,7 +315,7 @@ span.title {
   top: 300px;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #bottomLinkWrapper {
   width: 60px;
   height: 15px;
@@ -325,7 +329,7 @@ span.title {
   font-size: 8px;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 #login-window {
   left: 50%;
   position: relative;
@@ -333,7 +337,7 @@ span.title {
   display: none;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .login-center-window {
   width: 300px;
   height: 400px;
@@ -354,30 +358,30 @@ span.title {
   color: #fff;
   padding: 10px 20px;
 }
-/* line 251, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .login-center-window h1 {
   margin-bottom: 0.5em;
 }
-/* line 255, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .login-center-window input {
   width: 100%;
 }
-/* line 259, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .login-center-window input.text {
   font-size: 24px;
   margin: 0.25em 0 1em 0;
 }
-/* line 264, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .login-center-window input.button {
   padding: 0.5em 0;
 }
-/* line 267, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .login-center-window input.button.highlight {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .dashboard {
   border: 1px solid #bbbbbb;
   height: 50px;
@@ -385,7 +389,7 @@ span.title {
   top: 55px;
   left: 400px;
 }
-/* line 282, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .dashboard .cell {
   background: #fff;
   color: #000;
@@ -395,11 +399,11 @@ span.title {
   display: inline-block;
   vertical-align: top;
 }
-/* line 290, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .dashboard .cell:first-child {
   border: none;
 }
-/* line 291, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .dashboard .cell .label {
   color: #999999;
   text-align: center;
@@ -407,7 +411,7 @@ span.title {
   width: 100%;
   line-height: 25px;
 }
-/* line 298, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .dashboard .cell .info {
   text-align: center;
   height: 50%;
