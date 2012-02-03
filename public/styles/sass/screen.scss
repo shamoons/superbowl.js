@@ -188,7 +188,11 @@ span.title {
 }
 
 #pasteboard {
-  position: absolute;
+  overflow: hidden;
+  background-color: black;
+}
+
+#inner {
 	background-image: url(/images/bgnoise.gif);
 }
 
