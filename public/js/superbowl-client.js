@@ -26,11 +26,6 @@
     };
 
 
-    // initialize application modules
-    modules['talk'](app.talk, socket);
-    modules['mindmap'](app.mindmap, app.talk, socket);
-
-    
     // Wire socket messages
     socket.on('connect', function() {
         // init
