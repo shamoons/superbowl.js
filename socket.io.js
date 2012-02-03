@@ -3,6 +3,7 @@ var jade = require('jade');
 
 var static    = require('./controllers/static');
 //var user      = require('./controllers/user');
+var widget    = require('./controllers/widget');
 
 module.exports = function(io) {
   io.sockets.on('connection', function (socket) {
@@ -22,6 +23,11 @@ module.exports = function(io) {
         html = jade.compile(data)();
         socket.emit('loadAuthenticationWindow', { html: html });
       })
+    });
+    
+    socket.on('createWidget', function (data) {
+      console.log(data);
+      widget.create(data);
     });
   });
 
