@@ -33,6 +33,9 @@
     $('#btn-login-cancel').bind('click', function(e) {
       $('#login-window-overlay-mask').hide();    
     });
+    $('#login-window-overlay-mask').bind('click', function(e) {
+      $('#login-window-overlay-mask').hide();    
+    });
     
 
     $('#canvas').click(function(e){
