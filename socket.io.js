@@ -2,7 +2,7 @@ var fs = require('fs');
 var jade = require('jade');
 
 var static    = require('./controllers/static');
-//var user      = require('./controllers/user');
+var user      = require('./controllers/user');
 var widget    = require('./controllers/widget');
 
 module.exports = function(io) {
@@ -30,7 +30,7 @@ module.exports = function(io) {
       widget.create(data);
     });
     socket.on("submit-login", function (data){
-      authenticate(data, 
+      user.authenticate(data, 
         function(){
           socket.emit('login-success')}, 
         function(){

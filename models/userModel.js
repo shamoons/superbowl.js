@@ -6,4 +6,4 @@ var UserSchema = new mongoose.Schema({
   , addedOn     : Date
 });
 
-exports.User =mongoose.model 'User', UserSchema
+exports.User =mongoose.model ('User', UserSchema)

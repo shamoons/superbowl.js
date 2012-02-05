@@ -1,13 +1,12 @@
 (function() {
-/*
+
   var superbowl = {};
 
   superbowl.resetView = function() {
-    $('#canvas').css('left', 0);
-    $('#canvas').css('top', 0);
+    //TODO move viewport to origin
   }
 
-*/
+
 	$(document).ready(function() {
     disableSelection(document.body);
     $("#bottomLinkWrapper").click(function() {
@@ -38,14 +37,12 @@
     });
     
 
-    $('#canvas').click(function(e){
+    $('#pasteboard').click(function(e){
       createWidget(e.pageX, e.pageY);
       // window.socket.emit('click', { x: e.pageX, y: e.pageY });
     });
     
-    // Debugging info, should probably be moved to separate file.
-    
-    $('#canvas').bind('mousemove', function(e) {
+    $('#pasteboard').bind('mousemove', function(e) {
       $('#mouse-stat .info').text( e.offsetX + ' : ' + e.offsetY )
     });
     
@@ -68,16 +65,4 @@ else                                                     // Everyone else
 target.style.cursor = "default"
 }
 
-
-/*
-
-$('#canvas').bind('mousemove.status', function(e) {
-  mouse.x = e.offsetX
-  mouse.y = e.offsetY
-  $('#mouse-stat .info').text( e.offsetX+' : '+e.offsetY )
-});
-
-
-
-*/
 
