@@ -29,6 +29,15 @@ module.exports = function(io) {
       console.log(data);
       widget.create(data);
     });
+    socket.on("submit-login", function (data){
+      authenticate(data, 
+        function(){
+          socket.emit('login-success')}, 
+        function(){
+          socket.emit('login-fail');
+        });
+    });
+    
   });
 
 }
