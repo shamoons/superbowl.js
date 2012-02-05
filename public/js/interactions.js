@@ -1,4 +1,5 @@
 (function() {
+/*
   var superbowl = {};
 
   superbowl.resetView = function() {
@@ -6,7 +7,7 @@
     $('#canvas').css('top', 0);
   }
 
-
+*/
 	$(document).ready(function() {
     disableSelection(document.body);
     $("#bottomLinkWrapper").click(function() {
@@ -17,7 +18,7 @@
       superbowl.resetView();
     });
     $('#login-button').bind('click', function(e) {
-      $('#login-window').show();
+      $('#login-window-overlay-mask').show();
     });
     $('#btn-login-submit').bind('click', function(e) {
       window.socket.emit('submit-login', {email: $('email-address').val(), password: $('password').val()});
@@ -27,10 +28,10 @@
       window.socket.on('login-fail', function(data) {
         $("body").append(data.html);
       });
-      $('#login-window').hide();
+      $('#login-window-overlay-mask').hide();
     });
     $('#btn-login-cancel').bind('click', function(e) {
-      $('#login-window').hide();    
+      $('#login-window-overlay-mask').hide();    
     });
     
 
