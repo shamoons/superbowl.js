@@ -4,15 +4,15 @@
 	  (function() {
       var screenWidth = screen.width;
       var screenHeight = screen.height;
-      $('#pasteboard').css('top', 0);
-      $('#pasteboard').css('left', 0);
-      $('#pasteboard').css('width', screenWidth);
-  	  $('#pasteboard').css('height', screenHeight);
+      $('#pasteboard').css('top', screenHeight / 2);
+      $('#pasteboard').css('left', screenWidth / 2);
+      $('#pasteboard').css('width', screenWidth * 3);
+  	  $('#pasteboard').css('height', screenHeight * 3);
 
-      $('#inner').css('width', screenWidth * 3);
-      $('#inner').css('height', screenHeight * 3);
-      $('#inner').css('left', screenWidth / 2 - screenWidth);
-      $('#inner').css('top', screenHeight / 2 - screenHeight);
+      $('#inner').css('width', screenWidth * 4);
+      $('#inner').css('height', screenHeight * 4);
+      // $('#inner').css('left', screenWidth / 2 - screenWidth);
+      // $('#inner').css('top', screenHeight / 2 - screenHeight);
   	  
       $('#pasteboard').kinetic();
 	  })();
@@ -26,11 +26,6 @@
     };
 
 
-    // initialize application modules
-    modules['talk'](app.talk, socket);
-    modules['mindmap'](app.mindmap, app.talk, socket);
-
-    
     // Wire socket messages
     socket.on('connect', function() {
         // init
