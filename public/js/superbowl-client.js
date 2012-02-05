@@ -54,14 +54,14 @@
     $('#header').slideDown();
     $('#slideDownTab').animate({
       top: 0
-    });
+    }).removeClass('up');
   }
   
   function slideHeaderUp() {
 	  $('#header').slideUp();
     $('#slideDownTab').animate({
       top: -42
-    });
+    }).addClass('up');
   }
 
 })();
