@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 
 var UserSchema = new mongoose.Schema({
-    email       : String
+    email       : {	type: String
+	    		  , validate: [/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/, 'not a valid email address']}
   , password    : String
   , createdOn   : { type: Date, default: Date.now }
 });
