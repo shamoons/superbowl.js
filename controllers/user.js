@@ -1,23 +1,46 @@
 User = require('../models/userModel');
 
-var createUser = function(params) {
+exports.create = function(params) {
+  var u = new User;
+  u.email = params.email;
+  u.password = params.password;
+  u.addedOn = Date.now;
+  console.log('User\n' + u);
+  u.save(function(err){
+    console.log('error saving User');
+    console.log(err);
+  })
+};
 
-}
 
 exports.authenticate = function(data, onSuccess, onFailure) {
-
-  User.find({'email': data.email}, function (err, docs) {
-    if (docs.length === 1) {
-      if (docs.pass === data.password) {
-        onSuccess();        
-      } else {
-        onFailure("Wrong Password for User");
-      }
-    }
-    else if (docs.length > 1) {
-       onFailure("Multiple records found for User");
+  console.log('looking for users');
+  User.findOne({'email': data.email}, function (err, doc) {
+    console.log('   Result:');
+    console.log(doc);
+    if (err) {
+      console.log ('error: ');
+      console.log(err);
     } else {
-        createUser({name: data.name});
+      if (doc != null ) {
+        if (doc.password === data.password) {
+          onSuccess('Login successful!');        
+        } else {
+          onFailure('Wrong Password');
+        }
+      } else {
+        console.log('no user found for email "' + data.email + '", creating new one');
+        //User.create({email: data.email, password: data.password});
+        var u = new User({email: data.email, password: data.password});
+          u.save(function(err){
+            if (err) {
+              console.log('error saving User:');
+              console.log(err);
+            } else {
+              console.log('save successful');
+            }
+          });
+      } 
     }
   }); 
 

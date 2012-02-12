@@ -2,7 +2,7 @@
   "database": {
     "host": "localhost",
     "port": "27017",
-    "database": "superbowlJS",
+    "database": "superbowljs",
     "username": "",
     "password": ""
   }

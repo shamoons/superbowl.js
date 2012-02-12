@@ -20,7 +20,7 @@
       $('#login-window-overlay-mask').show();
     });
     $('#btn-login-submit').bind('click', function(e) {
-      window.socket.emit('submit-login', {email: $('email-address').val(), password: $('password').val()});
+      window.socket.emit('submit-login', {email: $('#email-address').val(), password: $('#password').val()});
       window.socket.on('login-success', function(data) {
         $("body").append(data.html);
       });
