@@ -31,11 +31,7 @@
         // init
     });
 	
-  	socket.on('news', function (data) {
-    	socket.emit('my other event', { my: 'data' });
-  	});
-  	
-  	
+ 	
   	$('#slideDownTab').click(function(){
   	  if($('#header').is(':visible')) {
   	    slideHeaderUp(); 

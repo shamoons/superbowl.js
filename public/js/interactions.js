@@ -62,7 +62,7 @@
   
   function createWidget(x, y) {
     var text = prompt("What text do you want to put?");
-    window.socket.emit('createWidget', {x: x, y: y, text: text});
+    window.socket.emit('createWidget', {x: x, y: y, data: {text: text}});
   }
 })();
 
