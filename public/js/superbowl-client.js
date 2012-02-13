@@ -36,11 +36,6 @@
   	});
   	
   	
-  	// Slide up the header bar
-  	setTimeout(function(){
-      slideHeaderUp();
-  	}, 1000);
-  	
   	$('#slideDownTab').click(function(){
   	  if($('#header').is(':visible')) {
   	    slideHeaderUp(); 
@@ -55,6 +50,13 @@
     $('#slideDownTab').animate({
       top: 0
     }).removeClass('up');
+
+    // Slide up the header bar    
+    $('#header').one('mouseleave', function(){
+      setTimeout(function(){
+        slideHeaderUp();
+      }, 1500);
+    });
   }
   
   function slideHeaderUp() {
@@ -63,5 +65,4 @@
       top: -42
     }).addClass('up');
   }
-
 })();
