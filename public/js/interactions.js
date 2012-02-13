@@ -51,7 +51,6 @@
 
     $('#pasteboard').click(function(e){
       createWidget(e.pageX, e.pageY);
-      // window.socket.emit('click', { x: e.pageX, y: e.pageY });
     });
     
     $('#pasteboard').bind('mousemove', function(e) {
