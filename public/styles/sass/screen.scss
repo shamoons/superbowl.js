@@ -190,11 +190,17 @@ span.title {
     display: block;
     margin-left: 5px;
   }    
-  .login-btn {
+  .login-btn, .logout-btn {
     position: relative;
     top: $top-offset;
     float: right;
     margin-right: 10px;
+    .menutext {
+      margin-right:6px;
+    }
+  }
+  .logout-btn {
+    display: none; 
   }
   
   span.light {

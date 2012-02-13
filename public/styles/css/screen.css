@@ -312,37 +312,45 @@ span.title {
   margin-left: 5px;
 }
 /* line 193, ../sass/screen.scss */
-#header .login-btn {
+#header .login-btn, #header .logout-btn {
   position: relative;
   top: 12px;
   float: right;
   margin-right: 10px;
 }
-/* line 200, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
+#header .login-btn .menutext, #header .logout-btn .menutext {
+  margin-right: 6px;
+}
+/* line 202, ../sass/screen.scss */
+#header .logout-btn {
+  display: none;
+}
+/* line 206, ../sass/screen.scss */
 #header span.light {
   color: #336699;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 #pasteboard {
   overflow: hidden;
   background-color: black;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #inner {
   background-image: url(/images/bgnoise.gif);
   position: relative;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .element {
   position: absolute;
   top: 700px;
   left: 700px;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 #login-window-overlay-mask {
   position: fixed;
   top: 0;
@@ -354,7 +362,7 @@ span.title {
   display: none;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #login-window {
   left: 50%;
   top: 0;
@@ -362,7 +370,7 @@ span.title {
   float: left;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .login-center-window {
   width: 300px;
   height: 400px;
@@ -383,30 +391,30 @@ span.title {
   color: #fff;
   padding: 10px 20px;
 }
-/* line 254, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .login-center-window h1 {
   margin-bottom: 0.5em;
 }
-/* line 258, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .login-center-window input {
   width: 100%;
 }
-/* line 262, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .login-center-window input.text {
   font-size: 24px;
   margin: 0.25em 0 1em 0;
 }
-/* line 267, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .login-center-window input.button {
   padding: 0.5em 0;
 }
-/* line 270, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .login-center-window input.button.highlight {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .dashboard {
   border: 1px solid #bbbbbb;
   height: 50px;
@@ -414,7 +422,7 @@ span.title {
   top: 55px;
   left: 400px;
 }
-/* line 285, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .dashboard .cell {
   background: #fff;
   color: #000;
@@ -424,11 +432,11 @@ span.title {
   display: inline-block;
   vertical-align: top;
 }
-/* line 293, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .dashboard .cell:first-child {
   border: none;
 }
-/* line 294, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .dashboard .cell .label {
   color: #999999;
   text-align: center;
@@ -436,7 +444,7 @@ span.title {
   width: 100%;
   line-height: 25px;
 }
-/* line 301, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .dashboard .cell .info {
   text-align: center;
   height: 50%;

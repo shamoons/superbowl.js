@@ -8,7 +8,7 @@ exports.authenticate = function(data, onSuccess, onFailure) {
     } else {
       if (doc != null ) {
         if (doc.passwordEquals(data.password)) {
-          onSuccess('Login successful!', {message: 'Welcome back!'});        
+          onSuccess('Login successful!', {message: 'Welcome back!', username: data.email});        
         } else {
           onFailure('Wrong Password', {message: 'Incorrect Password.'});
         }
@@ -18,7 +18,7 @@ exports.authenticate = function(data, onSuccess, onFailure) {
             if (err) {
               onFailure(err, {message: 'Error saving user data.'});
             } else {
-              onSuccess('Success: created new User', {message: 'Success! We just created a new account for you.'})
+              onSuccess('Success: created new User', {message: 'Success! We just created a new account for you.', username: data.email})
             }
           });
       } 

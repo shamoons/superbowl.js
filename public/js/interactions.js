@@ -22,13 +22,25 @@
     $('#btn-login-submit').bind('click', function(e) {
       window.socket.emit('submit-login', {email: $('#email-address').val(), password: $('#password').val()});
       window.socket.on('login-success', function(data) {
-        $("body").append(data.html);
+        console.log('login succeeded ');
+        $('.login-btn').hide();
+        $('.logout-btn').show();
+        $('.logout-btn .menutext').text(data.username);
       });
       window.socket.on('login-fail', function(data) {
         $("body").append(data.html);
       });
       $('#login-window-overlay-mask').hide();
     });
+
+    $('#logout-button').bind('click', function(e) {
+      window.socket.emit('logout');
+      console.log('logged out');
+      $('.logout-btn').hide();
+      $('.logout-btn .menutext').empty();
+      $('.login-btn').show();
+  });
+
     $('#btn-login-cancel').bind('click', function(e) {
       $('#login-window-overlay-mask').hide();    
     });

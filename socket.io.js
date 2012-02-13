@@ -30,14 +30,13 @@ module.exports = function(io) {
       widget.create(data);
     });
     socket.on("submit-login", function (data){
-      console.log('authenticating...');
       user.authenticate(data, 
-        function(res){
+        function(res, data){
           console.log('authentication succeeded: ' + res);
-          socket.emit('login-success')}, 
-        function(res){
+          socket.emit('login-success', data)}, 
+        function(res, data){
           console.log('authentication failed: ' + res);
-          socket.emit('login-fail');
+          socket.emit('login-fail', data);
         });
     });
     
