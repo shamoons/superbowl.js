@@ -6,6 +6,11 @@
     //TODO move viewport to origin
   }
 
+  superbowl.renderWidget = function (widgetData) {
+        newPod = $('<div></div>', {class: 'element', style: 'left: '+ widgetData.location.x +'px; top: '+ widgetData.location.y +'px;'})
+                  .appendTo('#pasteboard #inner')
+                  .html('<p>' + widgetData.data.text + '</p>');
+  }
 
 	$(document).ready(function() {
     disableSelection(document.body);
@@ -56,13 +61,28 @@
     $('#pasteboard').bind('mousemove', function(e) {
       $('#mouse-stat .info').text( e.offsetX + ' : ' + e.offsetY )
     });
-    
+
+
+    //TODO get client screen size from jQuery;
+    //userPosition is the center of the screen
+    window.socket.emit('getWidgets', {userPosition: {x: 0, y:0}, userScreenSize: {x: 1280, y:740}}); 
+
+    window.socket.on('widget-update', function(data){
+      console.log('received widget update');
+      data.forEach(function(widget) {
+        superbowl.renderWidget(widget);
+      });
+      console.log(data);
+    });
     
   });
   
   function createWidget(x, y) {
     var text = prompt("What text do you want to put?");
-    window.socket.emit('createWidget', {x: x, y: y, data: {text: text}});
+    if(text && text != '') {
+      superbowl.renderWidget({location: {x: x, y:y}, data: {text: text}});
+      window.socket.emit('createWidget', {x: x, y: y, data: {text: text}});
+    }
   }
 })();
 

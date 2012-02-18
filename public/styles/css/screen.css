@@ -346,11 +346,9 @@ span.title {
 /* line 221, ../sass/screen.scss */
 .element {
   position: absolute;
-  top: 700px;
-  left: 700px;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #login-window-overlay-mask {
   position: fixed;
   top: 0;
@@ -362,7 +360,7 @@ span.title {
   display: none;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #login-window {
   left: 50%;
   top: 0;
@@ -370,7 +368,7 @@ span.title {
   float: left;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .login-center-window {
   width: 300px;
   height: 400px;
@@ -391,30 +389,30 @@ span.title {
   color: #fff;
   padding: 10px 20px;
 }
-/* line 260, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .login-center-window h1 {
   margin-bottom: 0.5em;
 }
-/* line 264, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .login-center-window input {
   width: 100%;
 }
-/* line 268, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .login-center-window input.text {
   font-size: 24px;
   margin: 0.25em 0 1em 0;
 }
-/* line 273, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .login-center-window input.button {
   padding: 0.5em 0;
 }
-/* line 276, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .login-center-window input.button.highlight {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .dashboard {
   border: 1px solid #bbbbbb;
   height: 50px;
@@ -422,7 +420,7 @@ span.title {
   top: 55px;
   left: 400px;
 }
-/* line 291, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .dashboard .cell {
   background: #fff;
   color: #000;
@@ -432,11 +430,11 @@ span.title {
   display: inline-block;
   vertical-align: top;
 }
-/* line 299, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .dashboard .cell:first-child {
   border: none;
 }
-/* line 300, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .dashboard .cell .label {
   color: #999999;
   text-align: center;
@@ -444,7 +442,7 @@ span.title {
   width: 100%;
   line-height: 25px;
 }
-/* line 307, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .dashboard .cell .info {
   text-align: center;
   height: 50%;

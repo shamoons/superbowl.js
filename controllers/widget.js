@@ -13,3 +13,5 @@ exports.create = function(req, res, next) {
   	}
   })
 };
+
+exports.findInRect = Widget.findInRect;

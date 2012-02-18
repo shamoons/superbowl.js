@@ -22,6 +22,19 @@ module.exports = function(io) {
           socket.emit('login-fail', data);
         });
     });
+
+    socket.on('getWidgets', function(data){
+      console.log('received getWidgets request');
+      Widget.findInRect(data, function(err, docs){
+        if (err) {
+          console.log('error finding widgets. ' + err);
+        } else {
+          if (docs && docs.length > 0) {
+            socket.emit('widget-update', docs);
+          }
+        }
+      });
+    });
     
   });
 
